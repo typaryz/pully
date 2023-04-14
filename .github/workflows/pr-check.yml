@@ -1,0 +1,16 @@
+name: Check the pull requests
+on:
+  pull_request_target:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ secrets.FLAG }}    
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Install required dependencies
+        run: npm ci
+      - name: Run the tests
+        run: npm test
