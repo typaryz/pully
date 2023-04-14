@@ -1,0 +1,20 @@
+{
+  "name": "pully",
+  "version": "1.0.0",
+  "description": "We need contributors! Just fork and create pull request random",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackerify/pully.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackerify/pully/issues"
+  },
+  "homepage": "https://github.com/hackerify/pully#readme"
+}
